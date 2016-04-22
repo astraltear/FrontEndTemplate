@@ -35,8 +35,6 @@ AUDIEN.globals = {
 		  sslHost: 'https://www.audien.com'
 		};
 	
-	console.log(AUDIEN.globals.isLoggedIn);
-	
 	//requireJS 기본 설정 부분
 	requirejs.config({
 	/*
@@ -63,18 +61,14 @@ AUDIEN.globals = {
 	        //뒤에 js 확장자는 생략한다.
 	        'jquery': 'jquery-2.2.3.min',
 	    },
-
-	/*
-	    shim:
-	    AMD 형식을 지원하지 않는 라이브러리의 경우 아래와 같이 shim을 사용해서 모듈로 불러올 수 있다.
-	    참고 : http://gregfranko.com/blog/require-dot-js-2-dot-0-shim-configuration/
-	*/
-	    shim:{
-	        'angular':{
-	            deps: ['jquery'], //angular가 로드되기 전에 jquery가 로드 되어야 한다.
-	            exports:'angular' //로드된 angular 라이브러리는 angular 라는 이름의 객체로 사용할 수 있게 해준다
-	        }
-	    }
+	});
+	
+	require(['jquery'],function($){
+		//alert($().jquery);
+		$(
+				function(){
+					alert("jquery module is load")
+				});
 	});
 
 

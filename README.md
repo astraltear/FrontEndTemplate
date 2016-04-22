@@ -32,4 +32,6 @@ npm install -g bower-installer
 
 references
 https://blog.outsider.ne.kr/933
+http://www.talkdev.net/bower-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/
+
 http://vnthf.github.io/blog/bower/
