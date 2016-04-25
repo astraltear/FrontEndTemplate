@@ -7,6 +7,31 @@
 <title>Insert title here</title>
 <script src="${pageContext.request.contextPath}/resources/js/basic/require.js"></script>
 <script type="text/javascript">
+/*  
+
+DTD 설명
+https://github.com/nhnent/fe.javascript/wiki/DTD
+
+Ajax Template Example
+
+var jqxhr = $.ajax({
+    url: url,
+    type: 'GET',             // default is GET but you can use other verbs based on your needs
+    cache: true,             // default is true, but false for dataType 'script' and 'jsonp', so set it on need basis 
+    data: {},                // add your request parameters in the data object
+    dataType: 'json',        // specify the dataType for future reference
+    jsonp: 'callback',       // only specify this to match the name of callback parameter your API is expecting for JSONP requests
+    statusCode: {            // if you want to handle specific error codes, use the status code mapping settings
+        404: handler404,
+        500: handler500
+    }
+});
+jqxhr.done(successHandler);
+jqxhr.fail(failureHandler); 
+ 
+ */
+
+
 	requirejs.config({
 		baseUrl : '${pageContext.request.contextPath}/resources/js/extends',
 		paths : {
