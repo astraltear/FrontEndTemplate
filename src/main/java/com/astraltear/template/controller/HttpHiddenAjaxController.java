@@ -12,7 +12,7 @@ import com.astraltear.template.entity.EmployeesVO;
 import com.astraltear.template.entity.FormVO;
 
 @Controller
-@RequestMapping("/ajaxHandler/*")
+@RequestMapping("ajaxHandler/*")
 public class HttpHiddenAjaxController {
 
 	private static final Logger logger = LoggerFactory.getLogger(HttpHiddenAjaxController.class);
@@ -55,5 +55,9 @@ public class HttpHiddenAjaxController {
 		return "/appLoader/appLoader";
 	}
 	
+	@RequestMapping("appLoader2")
+	public String appLoader2() {
+		return "/appLoader/appLoader2";
+	}	
 	
 }

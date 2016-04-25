@@ -17,9 +17,10 @@
     <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/appLoader/code-snippet.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/appLoader/app-loader.js"></script>
     <script type="text/javascript">
-        var iosScheme = 'payco://open';
+        var iosScheme = 'iaudienb2b://';
 //        var intentURI = 'intent://open#Intent;scheme=payco;S.browser_fallback_url=http%3A%2F%2Fwww.payco.com;package=com.nhnent.payapp;end';
-        var intentURI = 'intent://open#Intent;scheme=payco;package=com.nhnent.payapp;end;';
+//        var intentURI = 'intent://open#Intent;scheme=payco;package=com.nhnent.payapp;end;';
+        var intentURI = 'iaudienb2b://';
         var AppLoader = tui.component.m.AppLoader;
 
         var loader = new AppLoader(),

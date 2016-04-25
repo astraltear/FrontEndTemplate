@@ -23,16 +23,16 @@
 <link rel="shortcut icon" href="http://static.ridibooks.com/books/images/favicon/ridibooks.ico"><!-- (favicon)  http://webdir.tistory.com/337  -->
 <script src="${pageContext.request.contextPath}/resources/js/basic/require.js"></script>
 <script>
-var AUDIEN = AUDIEN || {};
-AUDIEN.globals = {
+var ASTRAL = ASTRAL || {};
+ASTRAL.globals = {
 		  isLogIn: false,
 		  userId: '',
 		  userEmail: '',
 		  isPc: true,
 		  isMobile: false,
 		  isApp: false,
-		  baseUrl: '//www.audien.com',
-		  sslHost: 'https://www.audien.com'
+		  baseUrl: '//www.google.com',
+		  sslHost: 'https://www.google.com'
 		};
 	
 	//requireJS 기본 설정 부분
